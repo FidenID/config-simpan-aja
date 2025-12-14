@@ -1,2 +1,2 @@
 # Hyprland
-gatau
+buat simpan config aja
