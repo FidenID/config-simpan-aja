@@ -1,0 +1,2 @@
+# config-simpan-aja
+gatau
