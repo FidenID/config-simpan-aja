@@ -1,2 +1,2 @@
-# config-simpan-aja
+# Hyprland
 gatau
