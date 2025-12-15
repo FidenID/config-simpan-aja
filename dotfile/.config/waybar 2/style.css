@@ -1,0 +1,181 @@
+/* ================= GLOBAL ================= */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: JetBrainsMono Nerd Font;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* ================= BAR BACKGROUND ================= */
+
+window#waybar {
+  background-color: rgba(26, 28, 43, 0.45); /* transparan lembut */
+  min-height: 22px;
+  margin: 8px;
+  border-radius: 14px;
+}
+
+/* ================= MODULE GROUP ================= */
+
+.modules-left,
+.modules-center,
+.modules-right {
+  margin: 0 4px;
+}
+
+/* ================= CUSTOM ================= */
+
+#custom-launcher {
+  font-size: 16px;
+  color: #00bfff;
+  padding: 0 10px;
+  margin: 3px;
+  background-color: #1a1c2b;
+  border-radius: 10px;
+}
+
+/* ================= SYSTEM ================= */
+
+#cpu,
+#memory,
+#temperature {
+  font-size: 13px;
+  background-color: #2a2d45;
+  margin: 3px 0;
+}
+
+#cpu {
+  color: #eed49f;
+  padding: 0px 8px 0px 10px;
+  border-radius: 10px 0 0 10px;
+}
+
+#memory {
+  color: #a6da95;
+  padding: 0px 8px 0px 0px;
+}
+
+#temperature {
+  color: #8aadf4;
+  padding: 0px 10px 0px 0px;
+  border-radius: 0 10px 10px 0;
+}
+
+/* ================= WINDOW ================= */
+
+#custom-window-name {
+  color: #68b0d6;
+  padding: 0 10px;
+  margin: 3px;
+  background-color: #1a1c2b;
+  border-radius: 10px;
+}
+
+/* ================= PACMAN ================= */
+
+#custom-pacman-update-icon {
+  background-color: #68b0d6;
+  color: #181926;
+  padding: 0 6px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+#custom-pacman-update {
+  color: #8bd5ca;
+  margin: 3px 6px 3px 0px;
+}
+
+/* ================= WORKSPACES ================= */
+
+#workspaces button {
+  background-color: transparent;
+  margin: 3px;
+}
+
+#workspaces button label {
+  margin: 0;
+  padding: 0 10px;
+  background-color: #1a1c2b;
+  border-radius: 10px;
+}
+
+/* ================= AUDIO / BACKLIGHT ================= */
+
+#pulseaudio,
+#backlight {
+  font-size: 13px;
+  background-color: #2a2d45;
+  margin: 3px 0;
+}
+
+#backlight {
+  color: #eed49f;
+  padding: 0 8px;
+  border-radius: 10px 0 0 10px;
+}
+
+#pulseaudio {
+  color: #91d7e3;
+  padding: 0 10px 0 0;
+  border-radius: 0 10px 10px 0;
+}
+
+/* ================= NETWORK / DISK ================= */
+
+#network,
+#disk {
+  color: #68b0d6;
+  padding: 0 10px;
+  margin: 3px;
+  background-color: #1a1c2b;
+  border-radius: 10px;
+}
+
+#network {
+  color: #c6a0f6;
+}
+
+/* ================= MISC ================= */
+
+#custom-dot {
+  color: #6e738d;
+  padding: 0 10px;
+  margin: 3px;
+  background-color: #1a1c2b;
+  border-radius: 10px;
+}
+
+#custom-dot-alt {
+  color: #a5adcb;
+  padding: 0 10px;
+  margin: 3px;
+}
+
+#custom-clock-icon {
+  color: #cad3f5;
+  padding: 0 10px;
+  margin: 3px;
+  background-color: #1a1c2b;
+  border-radius: 10px;
+}
+
+#custom-filler,
+#custom-filler2 {
+  color: #6e738d;
+  padding: 0 10px;
+  margin: 3px;
+  background-color: #1a1c2b;
+  border-radius: 10px;
+}
+
+#custom-filler2 {
+  padding-left: 6px;
+}
+
+#clock {
+  padding-left: 6px;
+}
+
