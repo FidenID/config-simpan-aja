@@ -1,0 +1,115 @@
+/* ================= GLOBAL ================= */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 13px;
+  font-weight: 600;
+  color: #eef2ff;
+}
+
+/* ================= BAR (SOLID SOFT BASE) ================= */
+
+window#waybar {
+  /* INI KUNCI UTAMA */
+  background-color: #1e2636;
+  /* bukan hitam, tapi biru-abu */
+
+  min-height: 32px;
+  margin: 10px;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+
+/* ================= GROUP ================= */
+
+.modules-left,
+.modules-center,
+.modules-right {
+  margin: 0 6px;
+}
+
+/* ================= MODULE (GLASS DI ATAS PANEL) ================= */
+
+#cpu,
+#memory,
+#temperature,
+#disk,
+#network,
+#battery,
+#pulseaudio,
+#backlight,
+#clock,
+#custom-launcher,
+#custom-window-name,
+#custom-playerctl {
+  background: rgba(255, 255, 255, 0.10);
+  padding: 0 12px;
+  margin: 4px;
+  border-radius: 14px;
+
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.15);
+}
+
+/* ================= ACCENTS ================= */
+
+#custom-launcher {
+  font-size: 16px;
+  color: #c7dcff;
+}
+
+#custom-window-name {
+  font-weight: 700;
+}
+
+#custom-playerctl {
+  min-width: 120px;
+  color: #f2d5cf;
+}
+
+/* ================= SYSTEM ================= */
+
+#cpu { color: #f5c2e7; }
+#memory { color: #a6e3a1; }
+#temperature { color: #89b4fa; }
+
+/* ================= AUDIO / LIGHT ================= */
+
+#pulseaudio { color: #94e2d5; }
+#backlight { color: #f9e2af; }
+
+/* ================= NETWORK / DISK ================= */
+
+#network { color: #cba6f7; }
+#disk { color: #89dceb; }
+
+/* ================= BATTERY ================= */
+
+#battery { color: #a6e3a1; }
+
+/* ================= WORKSPACES ================= */
+
+#workspaces button {
+  background: transparent;
+  margin: 4px;
+}
+
+#workspaces button label {
+  padding: 0 12px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.10);
+}
+
+#workspaces button.active label {
+  background: rgba(255,255,255,0.25);
+}
+
+/* ================= CLOCK ================= */
+
+#clock {
+  font-weight: 700;
+}
+

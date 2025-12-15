@@ -1,0 +1,108 @@
+{
+  "layer": "top",
+  "height": 36,
+  "margin-top": 10,
+  "margin-left": 10,
+  "margin-right": 10,
+
+  "modules-left": [
+    "custom/launcher",
+    "custom/window-name",
+    "custom/playerctl"
+  ],
+
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-right": [
+    "cpu",
+    "memory",
+    "temperature",
+    "custom/dot",
+    "backlight",
+    "pulseaudio",
+    "custom/dot",
+    "network",
+    "battery",
+    "clock"
+  ],
+
+  "custom/launcher": {
+    "format": "󰣇"
+  },
+
+  "custom/window-name": {
+    "format": "{}",
+    "interval": 1,
+    "exec": "hyprctl activewindow | grep class | awk '{print $2}'"
+  },
+
+  "custom/playerctl": {
+    "format": "{icon} {title}",
+    "return-type": "json",
+    "max-length": 40,
+    "exec": "playerctl metadata --format '{\"title\":\"{{title}}\",\"icon\":\"{{status}}\"}' -F",
+    "format-icons": {
+      "Playing": "",
+      "Paused": "󰏥"
+    },
+    "on-click": "playerctl play-pause"
+  },
+
+  "custom/dot": {
+    "format": ""
+  },
+
+  "cpu": {
+    "interval": 10,
+    "format": " {usage}%"
+  },
+
+  "memory": {
+    "interval": 30,
+    "format": " {}%"
+  },
+
+  "temperature": {
+    "thermal-zone": 0,
+    "format": " {temperatureC}°C"
+  },
+
+  "backlight": {
+    "device": "amdgpu_bl1",
+    "format": "{icon} {percent}",
+    "format-icons": ["","","","","","","","",""]
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}",
+    "format-icons": {
+      "default": ["󰝟","","󰕾",""]
+    }
+  },
+
+  "network": {
+    "format-wifi": "󰒢 {essid}",
+    "format-ethernet": " wired",
+    "format-disconnected": ""
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["","","","","","","","","",""]
+  },
+
+  "clock": {
+    "format": "{:%H:%M}"
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "active": "",
+      "default": ""
+    }
+  }
+}
+
