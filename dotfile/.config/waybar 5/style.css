@@ -36,6 +36,24 @@ window#waybar {
   border-radius: 10px;
 }
 
+/* ================= TRAY ================= */
+
+#tray {
+    background-color: #1a1c2b;
+    padding: 0 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #ed8796;
+}
+
 /* ================= CPU / RAM / TEMP ================= */
 
 #cpu,
@@ -171,4 +189,3 @@ window#waybar {
   background-color: #1a1c2b;
   border-radius: 10px;
 }
-

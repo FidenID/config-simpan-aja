@@ -8,6 +8,7 @@
 
   "modules-left": [
     "custom/launcher",
+    "tray",  // Ditambahkan di sini
     "cpu",
     "memory",
     "temperature",
@@ -71,6 +72,12 @@
     "exec": "checkupdates | wc -l"
   },
 
+  // Tray module (ditambahkan)
+  "tray": {
+    "icon-size": 18,
+    "spacing": 8
+  },
+
   "cpu": {
     "interval": 10,
     "format": " {usage}%"
@@ -127,4 +134,3 @@
     }
   }
 }
-
