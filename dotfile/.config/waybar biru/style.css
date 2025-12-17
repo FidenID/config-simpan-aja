@@ -1,0 +1,41 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background-color: rgba(26, 27, 38, 0); /* Transparan penuh */
+    color: #c0caf5;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* Gaya Kapsul/Pills */
+#workspaces, #clock, #network, #pulseaudio, #battery, #tray, #custom-power {
+    background-color: #1a1b26;
+    padding: 0px 15px;
+    margin: 5px 3px;
+    border-radius: 15px;
+    border: 1px solid #414868;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: #565f89;
+}
+
+#workspaces button.active {
+    color: #7aa2f7;
+}
+
+#workspaces button.urgent {
+    color: #f7768e;
+}
+
+#clock { color: #bb9af7; }
+#pulseaudio { color: #7aa2f7; }
+#battery { color: #9ece6a; }
+#network { color: #b4f9f8; }
+#custom-power { color: #f7768e; margin-right: 10px; }
