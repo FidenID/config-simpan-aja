@@ -1,7 +1,4 @@
 # Hyprland
 
 
-1. Waybar yang pertama itu waybar saya ambil dari config orang
-2. Waybar 2 itu saya ambil dari waybar 5 yang saya modif pakai chat gpt
-3. waybar 5 itu waybar yang saya modif pakai chatgpt 
-
+<img width="1366" height="768" alt="2025-12-17_19-14-54" src="https://github.com/user-attachments/assets/85d3e06e-8ded-42f4-b2b2-91cf0fa3d490" />
