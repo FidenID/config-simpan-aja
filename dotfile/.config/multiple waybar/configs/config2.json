@@ -1,14 +1,22 @@
 {
   "layer": "top",
-  "height": 36,
+  "height": 35,
   "margin-top": 10,
   "margin-left": 10,
   "margin-right": 10,
+  "spacing": 0,
 
   "modules-left": [
     "custom/launcher",
+    "tray",  // Ditambahkan di sini
+    "cpu",
+    "memory",
+    "temperature",
     "custom/window-name",
-    "custom/playerctl"
+    "custom/playerctl",
+    "disk",
+    "custom/pacman-update-icon",
+    "custom/pacman-update"
   ],
 
   "modules-center": [
@@ -16,15 +24,13 @@
   ],
 
   "modules-right": [
-    "cpu",
-    "memory",
-    "temperature",
-    "custom/dot",
+    "battery",
+    "custom/dot-alt",
     "backlight",
     "pulseaudio",
-    "custom/dot",
+    "custom/dot-alt",
     "network",
-    "battery",
+    "custom/dot-alt",
     "clock"
   ],
 
@@ -33,25 +39,43 @@
   },
 
   "custom/window-name": {
-    "format": "{}",
+    "format": "<b>{}</b>",
     "interval": 1,
     "exec": "hyprctl activewindow | grep class | awk '{print $2}'"
   },
 
   "custom/playerctl": {
-    "format": "{icon} {title}",
+    "format": "{icon} {}",
     "return-type": "json",
     "max-length": 40,
-    "exec": "playerctl metadata --format '{\"title\":\"{{title}}\",\"icon\":\"{{status}}\"}' -F",
+    "exec": "playerctl -a metadata --format '{\"text\":\"{{title}}\",\"icon\":\"{{status}}\"}' -F",
     "format-icons": {
       "Playing": "",
       "Paused": "󰏥"
     },
-    "on-click": "playerctl play-pause"
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-click-middle": "playerctl previous"
   },
 
-  "custom/dot": {
-    "format": ""
+  "custom/dot-alt": {
+    "format": ""
+  },
+
+  "custom/pacman-update-icon": {
+    "format": ""
+  },
+
+  "custom/pacman-update": {
+    "format": "{}",
+    "interval": 3600,
+    "exec": "checkupdates | wc -l"
+  },
+
+  // Tray module (ditambahkan)
+  "tray": {
+    "icon-size": 18,
+    "spacing": 8
   },
 
   "cpu": {
@@ -67,6 +91,11 @@
   "temperature": {
     "thermal-zone": 0,
     "format": " {temperatureC}°C"
+  },
+
+  "disk": {
+    "interval": 5,
+    "format": " {}%"
   },
 
   "backlight": {
@@ -94,7 +123,7 @@
   },
 
   "clock": {
-    "format": "{:%H:%M}"
+    "format": "{:%I:%M %p}"
   },
 
   "hyprland/workspaces": {
@@ -105,4 +134,3 @@
     }
   }
 }
-

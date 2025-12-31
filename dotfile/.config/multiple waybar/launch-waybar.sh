@@ -21,8 +21,12 @@ case "$1" in
         CONFIG="$CONFIG_DIR/config3.json"
         STYLE="$STYLE_DIR/style3.css"
         ;;
+    4)
+        CONFIG="$CONFIG_DIR/config4.json"
+        STYLE="$STYLE_DIR/style4.css"
+        ;;
     *)
-        echo "Usage: $0 {1|2|3}"
+        echo "Usage: $0 {1|2|3|4}"
         exit 1
         ;;
 esac
