@@ -16,3 +16,9 @@ alias w1="bash ~/.config/waybar/launch-waybar.sh 1"
 alias w2="bash ~/.config/waybar/launch-waybar.sh 2"
 alias w3="bash ~/.config/waybar/launch-waybar.sh 3"
 alias w4="bash ~/.config/waybar/launch-waybar.sh 4"
+
+
+
+
+
+
