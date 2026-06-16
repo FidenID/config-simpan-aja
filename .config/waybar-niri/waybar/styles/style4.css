@@ -1,0 +1,45 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px; /* Sedikit dinaikkan agar ikon font tidak kekecilan */
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background-color: rgba(26, 27, 38, 0); /* Transparan penuh agar kapsul terlihat melayang */
+    color: #c0caf5;
+}
+
+/* Gaya Kapsul / Pills */
+#workspaces, #clock, #network, #pulseaudio, #battery, #tray, #custom-power {
+    background-color: #1a1b26;
+    padding: 2px 15px; /* Menambah padding vertikal agar tidak terlalu tipis */
+    margin: 5px 3px;
+    border-radius: 15px;
+    border: 1px solid #414868;
+}
+
+/* Penataan Khusus Workspace Niri */
+#workspaces button {
+    padding: 0 8px;
+    color: #565f89;
+    background: transparent;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    color: #7aa2f7;
+    background: transparent;
+}
+
+#workspaces button.urgent {
+    color: #f7768e;
+    background: transparent;
+}
+
+/* Warna Modul Spesifik */
+#clock { color: #bb9af7; }
+#pulseaudio { color: #7aa2f7; }
+#battery { color: #9ece6a; }
+#network { color: #b4f9f8; }
+#custom-power { color: #f7768e; margin-right: 10px; }

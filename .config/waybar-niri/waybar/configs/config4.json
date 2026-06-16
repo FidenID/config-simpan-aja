@@ -1,0 +1,49 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 34, 
+    "modules-left": ["niri/workspaces", "custom/weather"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "network", "pulseaudio", "battery", "custom/power"],
+
+    "niri/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+        "urgent": "",
+        "active": "",
+        "default": ""
+    }
+    },
+    "clock": {
+        "format": "{:%H:%M}  ",
+        "format-alt": "{:%A, %B %d, %Y}  ",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": " Mute",
+        "format-icons": { "default": ["", "", ""] },
+        "on-click": "pavucontrol"
+    },
+    "battery": {
+        "states": { "warning": 30, "critical": 15 },
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        "format-wifi": " {essid}",
+        "format-ethernet": "   {ifname}",
+        "format-disconnected": "   Disconnected"
+    },
+    "custom/power": {
+        "format": "󰮯",
+    	"tooltip": false,
+   	"on-click": "eww open --toggle dashboard",
+   	"on-click-right": "eww kill",
+   	"interval": "once"
+    },
+}
